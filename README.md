@@ -1,6 +1,6 @@
 # Proyecto: Contratos Inteligentes con UUPS Proxy Pattern
 
-Este proyecto demuestra cómo crear y probar dos versiones de un contrato inteligente utilizando el Patrón Proxy UUPS (Upgradeable Proxy Standard) con OpenZeppelin, Hardhat y TypeScript.
+Este proyecto demuestra cómo crear y probar dos versiones de un mismo contrato inteligente utilizando el Patrón Proxy UUPS (Upgradeable Proxy Standard) con OpenZeppelin, Hardhat y TypeScript.
 
 ## Descripción
 
