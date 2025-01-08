@@ -10,11 +10,11 @@ async function main() {
   if (!proxyAddress) {
     throw new Error("Proxy address is not defined in .env file.");
   }
-  console.log("Original proxy addres", proxyAddress);
+  console.log("Original proxy address", proxyAddress);
   // Fábrica del contrato V2
   const ContractV2 = await ethers.getContractFactory("ContractV2");
   console.log("updaitng to ContractV2...");
-  
+
   // Validar que el signer sea el owner actual
   const proxy = await ethers.getContractAt("ContractV1", proxyAddress);
   const currentOwner = await proxy.owner();
