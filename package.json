@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "npx hardhat compile",
+    "deployV1": "npx hardhat run scripts/DeployV1.ts --network localhost",
+    "deployV2": "npx hardhat run scripts/DeployV2.ts --network localhost",
+    "deploy": "npm run DeployV1 && npm run DeployV2",
+    "test": "npx hardhat test"
   },
   "keywords": [],
   "author": "Hans Garcia",
@@ -16,5 +20,8 @@
     "@openzeppelin/hardhat-upgrades": "^3.8.0",
     "dotenv": "^16.4.7",
     "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
   }
 }
