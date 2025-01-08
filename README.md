@@ -64,6 +64,12 @@ Ambos contratos utilizan la librería de OpenZeppelin para garantizar la segurid
 - Conserva la función `_authorizeUpgrade` para cumplir con el estándar UUPS.
 
 ## Despliegue
+### En la terminal ejecutar: 
+```bash 
+npx hardhat node
+```
+Esto creara un nodo de Hardhat en el puerto 8545.
+con Varias cuentas predefinidas para pruebas.
 
 ### Despliegue de ContractV1
 
